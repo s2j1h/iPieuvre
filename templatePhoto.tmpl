@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Instants de Vie</title>
+<link href="../style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="../images/jquery.js"></script>
+<script type="text/javascript" src="../images/thickbox.js"></script>
+<link rel="stylesheet" href="../images/thickbox.css" type="text/css" media="screen" />
+
+</head>
+
+<body>
+<div id="container">
+<!-- header -->
+<div id="logo"><a href="../index.html">Instants de vie</a></div>
+<div id="menu">
+    <ul>
+    <li><a href="../index.html" $photo_css_class>Photos</a></li>
+    <li><a href="../videos.html" $video_css_class>Vidéos</a></li>
+    </ul>
+</div>
+<!--end header -->
+<!-- main -->
+<div id="main">
+
+<center>
+<h1>$title</h1>
+<div><a href="../index.html">Retour au menu principal</a></div>
+#for $photo in $myphotos:
+      <a href="$photo.url" title="$photo.title" class="thickbox" rel="gallery"><img src="$photo.thumbnail" alt="$photo.title" /></a> 
+#end for
+<div><a href="../index.html">Retour au menu principal</a></div>
+</center>
+
+<div id="text_bottom">
+
+<div id="first_col">
+<h2>Statistiques</h2>
+Instants de vie en quelques chiffres:
+<ul>
+	<li>$numalbums albums photos sur le site avec $numphotosalbums photos</li>
+	<li>$numvideos vidéos sur le site</li>
+</ul></div>
+
+<div id="second_col">
+<h2>Actualités</h2>
+La dernière mise à jour du site remonte au $dateupdate, l'album le plus récent est <a href="$recentalbum.url">$recentalbum.title</a> et la dernière vidéo visible est <a href="$recentvideo.url">$recentvideo.title</a>.
+<BR/><BR/><BR/>
+</div>
+
+<div id="third_col">
+<h2>Ailleurs</h2>
+Pourquoi ne pas consulter aussi <a href="http://9mois.raigneau.net">le blog 9mois</a> ou bien <a href="http://famille.raigneau.net">l'arbre généalogique familial</a> (accès restreint) ?
+</div>
+</div>
+
+
+</div>
+<!-- end main -->
+<!-- footer -->
+<div id="footer">
+    <div id="footer_left">&copy; Copyright 2009 J.Raigneau - <b>Instants de vie</b> est fièrement propulsé par <a href="http://www.tifauve.net/IPieuvre">iPieuvre</a> </div>
+    <div id="footer_right">
+    Les photos sont hébergées sur picasaWeb et le 
+    <!-- Please do not change or delete these links. Read the license! Thanks. :-) -->
+    <a href="http://www.realitysoftware.ca/services/website-development/design/">design</a> est tiré de <a href="http://www.flash-gallery.org/">Flash Gallery</a>
+    </div>
+</div>
+<!-- end footer -->
+</div>
+</body>
+</html>

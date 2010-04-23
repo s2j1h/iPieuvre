@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>$title</title>
+<style>
+body {margin:0; font-family:Georgia, "Times New Roman", Times, serif;}
+a {color:#FDC605; text-decoration:none;}
+a:hover {text-decoration:underline;}
+</style>
+</head>
+
+<body BGCOLOR="#000" TEXT="#fff">
+
+<script type="text/javascript" src="swfobject.js"></script>
+
+<center> 
+<br/>
+<br/>
+<div><font size="6">$title</font></div>
+<br/>
+
+<div id="player">This text will be replaced</div>
+ 
+<script type="text/javascript">
+var so = new SWFObject('player.swf','mpl','470','320','9');
+so.addParam('allowscriptaccess','always');
+so.addParam('allowfullscreen','true');
+so.addParam('flashvars','&file=$url_video&image=$url_pic&dock=false&autostart=true');
+so.write('player');
+</script>
+
+<div><A HREF="../videos.html">Retour au menu</A></DIV>
+
+</center>
+
+</body>
+</html>
